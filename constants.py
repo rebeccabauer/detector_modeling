@@ -1,0 +1,7 @@
+GRAY = '#999999'
+LIGHT_BLUE = '#b1d2ef'
+YELLOW = '#efe5b1'
+NAVY = '#183747'
+NAVY2 = '#0e4866'
+Y2 = '#0e4866'
+ORANGE = '#f29b04'
