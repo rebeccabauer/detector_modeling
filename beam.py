@@ -109,7 +109,7 @@ class BeamOverlap(object):
 
 def derivative(x, y):
     """
-    Calculate derivatives based on the provided x and y value lists
+    Approximate derivatives based on the provided x and y value lists
     :return: derivative values and corresponding x-values
     """
     derivatives = []

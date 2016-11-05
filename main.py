@@ -24,13 +24,14 @@ beam = Beam(BEAM_RADIUS)
 
 # Create an instance of BeamOverlap, which handles interaction between the beam and sensor
 overlap = BeamOverlap(big_gaps, beam)
+square_overlap = BeamOverlap(square_detector, beam)
 
 # Sweep the beam over the detector and graph the results
 overlap.linear_sweep(-1*RADIUS, -1*RADIUS, RADIUS, RADIUS)      # centered diagonal sweep
-overlap.linear_sweep(-1*RADIUS/3, -1*RADIUS, RADIUS, RADIUS/2)  # off-center sweep
+square_overlap.linear_sweep(-1*RADIUS/3, -1*RADIUS, RADIUS, RADIUS/2)  # off-center sweep
 
 # Calculate displacement for a single laser position:
-beam.recenter(0.5, 0.3)   # new beam position
+beam.recenter(1.5, 0.3)   # new beam position
 x_disp, y_disp = square_detector.calculate_displacement(beam)       # calculate displacements
 print "x displacement is {}, and y displacement is {}.".format(x_disp, y_disp)
 

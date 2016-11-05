@@ -48,3 +48,6 @@ Temporary Items
 
 # IDEA Files
 .idea
+
+# pyc
+.pyc
